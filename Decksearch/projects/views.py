@@ -4,8 +4,8 @@ from django.http import HttpResponse
 
 
 def projects(request):
-    return HttpResponse("Checking........")
+    return render(request, 'projects.html')
 
 
-def project(request, pk):
-    return HttpResponse("Project Page:" + str(pk))
+def project(request):
+    return render(request, 'single-project.html')
