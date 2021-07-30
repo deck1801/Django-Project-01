@@ -5,3 +5,7 @@ from django.http import HttpResponse
 
 def projects(request):
     return HttpResponse("Checking........")
+
+
+def project(request, pk):
+    return HttpResponse("Project Page:" + str(pk))
